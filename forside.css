@@ -1,0 +1,260 @@
+/*-------------------Forside---------------------*/
+
+#forside {
+    margin-top: 3.5vw;
+}
+
+#forsidebillede {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: 0;
+    background-image: url(images/forside.png);
+}
+
+/*-------------------Portfolio---------------------*/
+
+/* unvisited link */
+#portfolio a:link {
+    color: white;
+    text-decoration: none;
+}
+
+/* visited link */
+#portfolio a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+#portfolio a:hover {
+    color: #ffb100;
+    text-decoration: none;
+}
+
+/* selected link */
+#portfolio a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#thumbnails .opgaver:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#portfolio img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+#portfolio h3 {
+    font-size: 1.2rem;
+    color: #ffb100;
+}
+
+#portfolio h4 {
+    font-size: 1rem;
+    color: #ffb100;
+}
+
+#portfolio P {
+    font-size: 1rem;
+    color: white;
+}
+
+.box {
+    width: 100%;
+    height: 30vw;
+    background-color: black;
+    text-align: center;
+    padding-top: 1vw;
+}
+
+#thumbnails {
+    font-size: 0;
+    display: grid;
+    grid-row-gap: 15vw;
+}
+
+.relative {
+    position: relative;
+    border-width: 2vw;
+    border-style: solid;
+    border-color: #ffb100;
+    margin-bottom: 15vw;
+}
+
+.infobokse {
+    width: 100%;
+    height: 91vw;
+    background-color: black;
+    padding: 1vw;
+}
+
+.kryds {
+    background-image: url(Kryds.svg);
+    position: absolute;
+    display: block;
+    top: 3vw;
+    right: 3vw;
+    height: 4vw;
+    width: 4vw;
+    float: right;
+    cursor: pointer;
+}
+
+.opgaver {
+    border-width: 2vw;
+    border-style: solid;
+    border-color: #ffb100;
+}
+
+.hide {
+    display: none;
+    left: -999em;
+}
+
+/*--------------------Header-----------------------*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+    background-color: black;
+    left: 0;
+}
+
+li {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li a {
+    display: block;
+    padding: 1vw 1vw;
+    text-decoration: none;
+}
+
+/* unvisited link */
+li a:link {
+    color: white;
+}
+
+/* visited link */
+li a:visited {
+    color: white;
+}
+
+/* mouse over link */
+li a:hover {
+    color: white;
+}
+
+/* selected link */
+li a:active {
+    color: white;
+}
+
+li a:hover:not(.active) {
+    border-color: #ffb100;
+    border-style: solid;
+}
+
+.headerlogo a:hover:not(.active) {
+    color: white;
+}
+
+.headerlogo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: flex-start;
+    color: white;
+    flex-grow: 1;
+    text-decoration: none;
+}
+
+.headerlogo a {
+    color: black;
+    text-decoration: none;
+}
+
+.underline {
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    height: 2px;
+    width: 44%;
+    background: black;
+    position: absolute;
+    left: calc(39% - 10%);
+    bottom: 0.8vw;
+}
+
+/*--------------Mobil-Header----------------*/
+
+.headerlistemobil {
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+}
+
+#burgerfane {
+    background-color: #fadac9;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+/*----------------Media-Q------------------*/
+
+@media (min-width: 700px) {
+    #thumbnails {
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5vw;
+        grid-row-gap: 5vw;
+    }
+
+    .opgaver {
+        border-width: 0.5vw;
+    }
+
+    .box {
+        height: 12vw;
+    }
+
+    .relative {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-width: 0.5vw;
+    }
+
+    .infobokse {
+        height: 21vw;
+    }
+
+    .kryds {
+        height: 2vw;
+        width: 2vw;
+    }
+}

@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/tastaturgr%C3%A5.png);
+    background-size: contain;
+    height: 100%;
+}
+
+main {
+    /*margin: 0 5vw;*/
+}
+
+h2 {
+    border-bottom-style: solid;
+    border-color: #ffb100;
+    border-width: 1vw;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5vw;
+}
+
+h2,
+h3 {
+    color: #ffb100;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------------Media-Q------------------*/
+
+@media (min-width: 700px) {
+    main {
+        margin: 0 10vw;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+}
