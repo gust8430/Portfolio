@@ -1,0 +1,61 @@
+img,
+video {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.overskrift {
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-row-gap: 15vw;
+}
+
+.row {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: #ffb100;
+    border-width: 2vw;
+}
+
+.tekst {
+    padding: 1vw;
+}
+
+.liste {
+    color: white;
+    position: relative;
+    left: 4vw
+}
+
+.item {
+    display: list-item;
+}
+
+/*----------------Media-Q------------------*/
+
+@media (min-width: 700px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-width: 0.5vw;
+    }
+
+    .grid {
+        grid-row-gap: 5vw;
+    }
+
+    h1 {
+        margin-top: 5vw;
+    }
+
+    .liste {
+        left: 1vw;
+        font-size: 1.2rem
+    }
+}

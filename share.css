@@ -17,7 +17,7 @@ main {
     /*margin: 0 5vw;*/
 }
 
-h2 {
+main h2 {
     border-bottom-style: solid;
     border-color: #ffb100;
     border-width: 1vw;
@@ -26,10 +26,173 @@ h2 {
     margin-bottom: 5vw;
 }
 
+h1 {
+    font-size: 2rem;
+    margin-top: 20vw;
+}
+
+h1,
 h2,
 h3 {
     color: #ffb100;
     font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------Header-----------------------*/
+
+.headerliste {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: block;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+    background-color: black;
+    left: 0;
+}
+
+li {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li a {
+    display: block;
+    padding: 1vw 1vw;
+    text-decoration: none;
+}
+
+/* unvisited link */
+li a:link {
+    color: white;
+}
+
+/* visited link */
+li a:visited {
+    color: white;
+}
+
+/* mouse over link */
+li a:hover {
+    color: white;
+}
+
+/* selected link */
+li a:active {
+    color: white;
+}
+
+li a:hover:not(.active) {
+    border-color: #ffb100;
+    border-style: solid;
+}
+
+.headerlogo a:hover:not(.active) {
+    color: white;
+}
+
+.headerlogo {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: flex-start;
+    color: white;
+    flex-grow: 1;
+    text-decoration: none;
+}
+
+.headerlogo a {
+    color: white;
+    text-decoration: none;
+}
+
+.underline {
+    color: black;
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: '';
+    height: 2px;
+    width: 44%;
+    background: black;
+    position: absolute;
+    left: calc(39% - 10%);
+    bottom: 0.8vw;
+}
+
+/*--------------Mobil-Header----------------*/
+
+.headerlistemobil {
+    z-index: 2;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: block;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+#burgerfane {
+    background-color: black;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
+    text-align: right;
+}
+
+.headerlogo {
+    text-decoration: none;
+    display: inline-block;
+}
+
+#burgerknap {
+    display: inline-block;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/*------------------Footer------------------*/
+
+footer {
+    width: 100%;
+    height: 45vw;
+    color: white;
+    background-color: black;
+    display: block;
+    grid-template-columns: 1fr 0.8fr 1fr 1fr;
+    border-top-style: solid;
+    border-top-width: 0.15vw;
+    border-top-color: #ffb100;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    margin-top: 15vw;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    color: black;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 /*----------------Media-Q------------------*/
@@ -39,7 +202,31 @@ h3 {
         margin: 0 10vw;
     }
 
-    h2 {
-        font-size: 5rem;
+    main h2 {
+        font-size: 3rem;
+        border-width: 0.5vw;
+    }
+
+    .headerlistemobil {
+        display: none;
+    }
+
+    .headerliste {
+        display: flex;
+    }
+
+    footer {
+        display: flex;
+        column-gap: 8vw;
+        height: 9vw;
+        margin-top: 5vw;
+    }
+
+    #lavetaf {
+        padding-top: 2vw;
+    }
+
+    h1 {
+        font-size: 4rem;
     }
 }
