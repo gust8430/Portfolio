@@ -161,6 +161,7 @@ li a:hover:not(.active) {
     font-size: 2rem;
     position: absolute;
     right: 1rem;
+    cursor: pointer;
 }
 
 .hidden {
