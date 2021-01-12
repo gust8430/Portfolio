@@ -12,6 +12,25 @@
     margin-top: 15vw;
 }
 
+/*----------------------CV-------------------------*/
+
+#mig {
+    background-color: black;
+    color: white;
+    border-width: 2vw;
+    border-style: solid;
+    border-color: #ffb100;
+}
+
+#info {
+    padding: 2vw;
+}
+
+#mig img {
+    width: 100%;
+    border-radius: 50%;
+}
+
 /*-------------------Portfolio---------------------*/
 
 /* unvisited link */
@@ -132,6 +151,15 @@
 /*----------------Media-Q------------------*/
 
 @media (min-width: 700px) {
+
+    #mig {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-width: 0.5vw;
+        font-size: 3rem;
+        padding-right: 1vw;
+    }
+
     #thumbnails {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 5vw;
@@ -178,5 +206,9 @@
         margin-left: 10vw;
         margin-right: 10vw;
         width: 80%;
+    }
+
+    .bund {
+        margin-bottom: 2vw;
     }
 }

@@ -84,4 +84,14 @@ video {
         padding-right: 1vw;
     }
 
-}
+    .to img {
+        height: 50%;
+    }
+
+    .tre img {
+        height: 33.33%;
+    }
+
+    .fire img {
+        height: 24.9%;
+    }

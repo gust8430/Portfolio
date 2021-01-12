@@ -33,9 +33,14 @@ h1 {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     color: #ffb100;
     font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
 }
 
 /*--------------------Header-----------------------*/
@@ -229,5 +234,11 @@ footer a {
 
     h1 {
         font-size: 4rem;
+    }
+
+    h3,
+    h4,
+    p {
+        font-size: 3rem;
     }
 }
