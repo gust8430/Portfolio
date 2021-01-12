@@ -173,4 +173,10 @@
     .button {
         padding: 0.7vw
     }
+
+    #forsidebillede {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 80%;
+    }
 }
