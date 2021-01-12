@@ -30,11 +30,35 @@ video {
 .liste {
     color: white;
     position: relative;
-    left: 4vw
+    left: 4vw;
+    padding-right: 2vw;
 }
 
 .item {
     display: list-item;
+}
+
+/* unvisited link */
+.overskrift a:link {
+    color: #ffb100;
+    text-decoration: none;
+}
+
+/* visited link */
+.overskrift a:visited {
+    color: #ffb100;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.overskrift a:hover {
+    color: #ffb100;
+
+}
+
+/* selected link */
+.overskrift a:active {
+    color: #ffb100;
 }
 
 /*----------------Media-Q------------------*/
@@ -56,6 +80,8 @@ video {
 
     .liste {
         left: 1vw;
-        font-size: 1.2rem
+        font-size: 1.2rem;
+        padding-right: 1vw;
     }
+
 }

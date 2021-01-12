@@ -85,6 +85,10 @@
     margin-bottom: 15vw;
 }
 
+.posrel {
+    position: relative;
+}
+
 .infobokse {
     width: 100%;
     height: 91vw;
